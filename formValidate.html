@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="formValidate.css">
+</head>
+<script src="formValidate.js"></script>
+
+<body>
+    <h1>Display: </h1>
+    <div>
+        <form name="validation" action="" onsubmit="return validateform()">
+            <p>
+                First Name: <input type="text" name="name" placeholder="First name" required>
+            </p>
+            <p>
+                Address: <input type="text" name="address" placeholder="Address" required>
+            </p>
+            <p>
+                Zip Code: <input type="text" name="zipcode" placeholder="Zipcode" required>
+            </p>
+            <p>
+                State:
+                <select type="text" value="" name="select" required>
+                    <option>Select your state</option>
+                    <option>Bihar</option>
+                    <option>West Bengal</option>
+                    <option>Karnataka</option>
+                    <option>Rajasthan</option>
+                    <option>Madhya Pradesh</option>
+                </select>
+
+            </p>
+            <p>
+                Username(6-8 characters): <input type="text" name="username" placeholder="Username" required>
+            </p>
+            <p>
+                Email: <input type="text" name="email" placeholder="Email address" required>
+            </p>
+            <p class="button">
+                <input type="submit" value="Check Form" name="checkform">
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
